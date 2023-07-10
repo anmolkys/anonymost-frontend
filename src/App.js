@@ -38,8 +38,8 @@ export default function App() {
           </div>
           <hr className="w-screen"></hr>
           <div className="list">
-            <h1 className="text-xl mt-3 mb-5 ml-3">Top Posts</h1>
-            {post.map((item) => <Post key={item._id} title={item.title} text={item.text} time={item.time}></Post>)}
+            <h1 className="text-xl mt-3 mb-5 ml-3">Latest Posts</h1>
+            {[...post].reverse().map((item) => <Post key={item._id} title={item.title} text={item.text} time={item.time}></Post>)}
 
           </div>
         </div>
