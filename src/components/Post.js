@@ -5,9 +5,9 @@ export default function Post({title,text,time}){
         <>
         <div className="px-6 bg-bg_dark text-gray-300 w-full">
             <div className="border border-reddit_border bg-bg_dark-brighter p-2">
-            <div className="title text-xl">:: {title}</div>
+            <div className="title text-xl whitespace-pre-wrap">:: {title}</div>
             <br></br>
-            <div className="text">{text}</div>
+            <div className="text whitespace-pre-wrap">{text}</div>
             <br></br>
             <div className="text-xs">Posted at {time} 
             </div>
